@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/Admin/Downloads/index%20(1).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--HEAD HTML FILE там все подключения и стиль туда можно все дописать-->
+    <!--         <jsp:include page="head.html" />         -->
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./index (1)_files/bootstrap.min.css">
+    <script src="./index (1)_files/jquery.min.js.Без названия"></script>
+    <script src="./index (1)_files/bootstrap.min.js.Без названия"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+        .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        }
+        
+        /* Add a gray background color and some padding to the footer */
+        footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+        }
+        
+    .carousel-inner img {
+        width: 100%; /* Set width to 100% */
+        margin: auto;
+        min-height:200px;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+        .carousel-caption {
+        display: none; 
+        }
+    }
+    </style>
+   
+    <link rel="stylesheet" href="./index (1)_files/w3.css">
+    <script>
+        function myFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myMenu");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+    </script>
+    <style>
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!--HEADER HTML FILE удалить НАВБАР полностью и подлючить только файл-->
+    <!--         <jsp:include page="header.html" />         -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="file:///C:/Users/Admin/Downloads/index%20(1).html#">TechnoTop</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="file:///C:/Users/Admin/Downloads/index.html">Home</a></li>
+            </ul>
+           
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="file:///C:/Users/Admin/Downloads/signUp.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="file:///C:/Users/Admin/Downloads/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
+<div class="col-sm-3 sidenav hidden-xs" style="float:left;">
+    <div class="w3-sidebar w3-bar-block" style="background-color: rgb(45, 44, 44);color: #f2f2f2; height: 80%;" id="mySidebar">  
+        <input type="text" id="mySearch" style="background-color: rgb(45, 44, 44); border-color: azure;" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        <ul id="myMenu">  
+            <li><a href="file:///C:/Users/Admin/Downloads/index%20(1).html#" class="w3-bar-item w3-button">Smartphones</a></li>
+            <li><a href="file:///C:/Users/Admin/Downloads/index%20(1).html#" class="w3-bar-item w3-button">Laptops</a></li>
+            <li><a href="file:///C:/Users/Admin/Downloads/index%20(1).html#" class="w3-bar-item w3-button">Home Appliances</a></li>
+        </ul>
+        <input type="range" id="myRange" class="form-range" min="5000" max="150000" step="5000">
+        <p>Value: <span id="demo"></span></p>
+    </div>
+</div>
+
+<div class="container text-center">    
+    <h1 style="margin-left: 20%;">Home Appliances and Electronics online-shop</h1><br>
+    
+    <div class="row" style="margin-left: 20%;">
+
+        <div class="col-sm-3">
+            <img src="file:///C:/Users/Admin/Downloads/pictures/lc/laptop/l1.webp" class="img-responsive" style="width:100%" alt="Image">
+            <p>PRODUCT NAME</p>
+            <button type="button" class="btn btn-primary">Add to cart</button>
+        </div>
+        
+  </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+    <p>TechnoTop</p>
+</footer>
+
+    
+
+
+</body></html>
